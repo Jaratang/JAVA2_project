@@ -5,6 +5,7 @@
 - 현재 시스템 실행시 출력되는 메인 페이지의 UI 크기 수정 
 ![image](https://user-images.githubusercontent.com/95271493/162378234-d92f8ffc-2b4b-4a09-a08b-fffae0e6e92c.png)
 - 왼쪽 그리드로 정렬된 버튼에 사진과 물품의 이름을 작성해 사용자가 한눈에 파악 할 수 있도록 구현 예정
+![image](https://user-images.githubusercontent.com/95271493/162399435-3555292f-6abf-4c32-b5f8-11e167f8a1ff.png)
 - 밑의 계산 버튼을 누르면 카드레이아웃 형태로 총 금액과 계산방법(카드/현금)을 선택하는 창 나타나도록 구현 예정
 ![image](https://user-images.githubusercontent.com/95271493/162382716-612379bb-abf4-4f82-8dda-95cde907510e.png)
 

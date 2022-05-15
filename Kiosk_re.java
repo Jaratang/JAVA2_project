@@ -46,9 +46,11 @@ public class Kiosk_re extends JFrame{
 	
 	void West_Menus() {
 		JPanel p1 = new JPanel(new GridLayout(0,2));
-		JPanel p2 = new JPanel(new GridLayout(3,0));
+		JPanel p2 = new JPanel(new GridLayout(0,2));
 		JPanel p3 = new JPanel(new GridLayout(0,2));
-		JPanel West = new JPanel(new GridLayout(3,0));
+		JPanel p4 = new JPanel(new GridLayout(0,2));
+		JPanel p5 = new JPanel(new GridLayout(0,2));
+		JPanel West = new JPanel(new GridLayout(5,0));
 		
 		//p1에 대한 정보
 		JLabel choice1 = new JLabel("선택 >>");
@@ -65,45 +67,85 @@ public class Kiosk_re extends JFrame{
 		//p2에 대한 정보(선택 메뉴에 따른 차별화 필요)
 		if(choice2.getSelectedIndex() == 0) 
 		{	
-			for(int i=0;i<Set_Menu.length;i++) 
+			for(int i=0;i<2;i++) 
 			{
 				menus_b[i] = new JButton(Set_Menu[i]);
 				p2.add(menus_b[i]);
 			}
+			for(int j=2;j<4;j++) 
+			{
+				menus_b[j] = new JButton(Set_Menu[j]);
+				p3.add(menus_b[j]);
+			}
+			for(int k=4;k<6;k++) 
+			{
+				menus_b[k] = new JButton(Set_Menu[k]);
+				p4.add(menus_b[k]);
+			}
 		}
 		else if(choice2.getSelectedIndex() == 1) 
 		{	
-			for(int i=0;i<Piece_Menu.length;i++) 
+			for(int i=0;i<2;i++) 
 			{
 				menus_b[i] = new JButton(Piece_Menu[i]);
 				p2.add(menus_b[i]);
 			}
+			for(int j=2;j<4+j;j++) 
+			{
+				menus_b[j] = new JButton(Piece_Menu[j]);
+				p3.add(menus_b[j]);
+			}
+			for(int k=4;k<6;k++) 
+			{
+				menus_b[k] = new JButton(Piece_Menu[k]);
+				p4.add(menus_b[k]);
+			}
 		}
 		else if(choice2.getSelectedIndex() == 2) 
 		{	
-			for(int i=0;i<Drink_Menu.length;i++) 
+			for(int i=0;i<2;i++) 
 			{
 				menus_b[i] = new JButton(Drink_Menu[i]);
 				p2.add(menus_b[i]);
 			}
+			for(int j=2;j<4;j++) 
+			{
+				menus_b[j] = new JButton(Drink_Menu[j]);
+				p3.add(menus_b[j]);
+			}
+			for(int k=4;k<6;k++) 
+			{
+				menus_b[k] = new JButton(Drink_Menu[k]);
+				p4.add(menus_b[k]);
+			}
 		}
 		else if(choice2.getSelectedIndex() == 3) 
 		{	
-			for(int i=0;i<Dessert_Menu.length;i++) 
+			for(int i=0;i<2;i++) 
 			{
 				menus_b[i] = new JButton(Dessert_Menu[i]);
 				p2.add(menus_b[i]);
 			}
+			for(int j=2;j<4;j++) 
+			{
+				menus_b[j] = new JButton(Dessert_Menu[j]);
+				p3.add(menus_b[j]);
+			}
+			for(int k=4;k<6;k++) 
+			{
+				menus_b[k] = new JButton(Dessert_Menu[k]);
+				p4.add(menus_b[k]);
+			}
 		}
 		
-		//p3에 대한 정보
-		JButton LB = new JButton();
-		JButton RB = new JButton();
+		//p5에 대한 정보
+		JButton LB = new JButton("<<");
+		JButton RB = new JButton(">>");
 		
-		p3.add(LB);
-		p3.add(RB);
+		p5.add(LB);
+		p5.add(RB);
 		
-		West.add(p1); West.add(p2); West.add(p3);
+		West.add(p1); West.add(p2); West.add(p3); West.add(p4); West.add(p5);
 		add(West, BorderLayout.WEST);
 	}
 	
